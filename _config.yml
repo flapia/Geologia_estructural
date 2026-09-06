@@ -1,0 +1,28 @@
+# Book settings
+title: Curso de Geología Estructural
+author: Felipe Tapia
+logo: logo.png
+
+# Execution settings
+execute:
+  execute_notebooks: auto
+
+# HTML-specific settings
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  use_download_button: true
+  home_page_in_navbar: true
+  extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+
+# Repository settings
+repository:
+  url: https://github.com/flapia/Geologia_estructural
+  path_to_book: ""
+  branch: main
+
+# Launch button settings
+launch_buttons:
+  notebook_interface: "jupyterlab"
+  binderhub_url: "https://mybinder.org"
