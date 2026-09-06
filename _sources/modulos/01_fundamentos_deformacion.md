@@ -1,4 +1,4 @@
-# Fundamentos de Deformación de Rocas
+# I Fundamentos de Deformación de Rocas
 
 La deformación en geología estructural describe los cambios en la forma, posición u orientación de un cuerpo rocoso debido a la acción de fuerzas tectónicas.
 
