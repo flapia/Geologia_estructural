@@ -10,20 +10,20 @@ jobs:
     permissions:
       contents: write
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    - name: Install dependencies
-      run: |
-        pip install jupyter-book ghp-import
+      - name: Install dependencies
+        run: |
+          pip install jupyter-book ghp-import
 
-    - name: Build book
-      run: |
-        jupyter-book build --all .
+      - name: Build book
+        run: |
+          jupyter-book build --all .
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
