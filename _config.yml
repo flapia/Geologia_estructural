@@ -1,11 +1,11 @@
 # Book settings
 title: Curso de Geología Estructural
 author: Felipe Tapia
-logo: logo.png
+logo: logo.jpg
 
 # Execution settings
 execute:
-  execute_notebooks: auto
+  execute_notebooks: "off"
 
 # HTML-specific settings
 html:
