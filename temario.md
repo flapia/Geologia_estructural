@@ -1,4 +1,4 @@
-## Contenidos
+# Contenidos
 
 1. Fundamentos de deformación de rocas
    - Tipos de deformación: elástica, plástica y frágil
