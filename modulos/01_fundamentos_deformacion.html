@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>I Fundamentos de Deformación de Rocas &#8212; Curso de Geología Estructural</title>
+    <title>Módulo I: Esfuerzo, Deformación y Reología de la Tierra &#8212; Curso de Geología Estructural</title>
   
   
   
@@ -62,8 +62,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'modulos/01_fundamentos_deformacion';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -180,7 +178,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulos del Curso</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">I Fundamentos de Deformación de Rocas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Módulo I: Esfuerzo, Deformación y Reología de la Tierra</a></li>
 </ul>
 
     </div>
@@ -383,7 +381,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>I Fundamentos de Deformación de Rocas</h1>
+    <h1>Módulo I: Esfuerzo, Deformación y Reología de la Tierra</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,8 +391,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estados-de-esfuerzo">Estados de Esfuerzo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regimenes-de-deformacion">Regímenes de Deformación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico">1. Introducción a la Geología Estructural y Modelado Geológico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-esfuerzo-stress">2. Análisis de Esfuerzo (Stress)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-deformacion-strain">3. Análisis de Deformación (Strain)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reologia-y-mecanica-de-rocas">4. Reología y Mecánica de Rocas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion">5. La Transición Frágil-Dúctil y Mecanismos de Deformación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seccion-especial-tarjetas-didacticas-flashcards-de-repaso">Sección Especial: Tarjetas Didácticas (Flashcards) de Repaso</a></li>
 </ul>
             </nav>
         </div>
@@ -406,27 +408,235 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="i-fundamentos-de-deformacion-de-rocas">
-<h1>I Fundamentos de Deformación de Rocas<a class="headerlink" href="#i-fundamentos-de-deformacion-de-rocas" title="Permalink to this heading">#</a></h1>
-<p>La deformación en geología estructural describe los cambios en la forma, posición u orientación de un cuerpo rocoso debido a la acción de fuerzas tectónicas.</p>
-<section id="estados-de-esfuerzo">
-<h2>Estados de Esfuerzo<a class="headerlink" href="#estados-de-esfuerzo" title="Permalink to this heading">#</a></h2>
-<p>El esfuerzo (<span class="math notranslate nohighlight">\(\sigma\)</span>) representa la fuerza aplicada por unidad de área:</p>
-<div class="math notranslate nohighlight">
-\[\sigma = \frac{F}{A}\]</div>
-<p>En un medio tridimensional, el tensor de esfuerzos describe los tres esfuerzos principales mutuamente perpendiculares:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="modulo-i-esfuerzo-deformacion-y-reologia-de-la-tierra">
+<h1>Módulo I: Esfuerzo, Deformación y Reología de la Tierra<a class="headerlink" href="#modulo-i-esfuerzo-deformacion-y-reologia-de-la-tierra" title="Permalink to this heading">#</a></h1>
+<section id="introduccion-a-la-geologia-estructural-y-modelado-geologico">
+<h2>1. Introducción a la Geología Estructural y Modelado Geológico<a class="headerlink" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico" title="Permalink to this heading">#</a></h2>
+<p>La Geología Estructural no es una disciplina meramente descriptiva, sino una herramienta analítica de primer orden para <strong>desentrañar</strong> la evolución tectónica de la litosfera. Su importancia estratégica radica en la capacidad de <strong>exhumar</strong> la historia de esfuerzos a partir de arquitecturas rocosas complejas, permitiendo no solo la reconstrucción de orógenos, sino la localización precisa de recursos energéticos, minerales y la evaluación de riesgos sísmicos. Al escrutar las estructuras, el geólogo no observa objetos estáticos, sino registros cinemáticos que permiten <strong>discretizar</strong> eventos tectónicos superpuestos en el tiempo geológico.</p>
+<p>**1.2. Definición y el “Problema Inverso”**La Geología Estructural es el estudio de la arquitectura de la corteza y las causas mecánicas que la originan. El geólogo se enfrenta al <strong>“Problema Inverso”</strong>: a partir de un estado final deformado, debe deducir la trayectoria de deformación (<em>strain path</em>) y el tensor de esfuerzos original. Es imperativo comprender que este problema es, por naturaleza, <strong>no-único</strong> (o no-recíproco); múltiples caminos cinemáticos pueden converger en una geometría final idéntica. Por ello, la interpretación requiere la integración de relaciones de corte y sobreimposición para restringir las soluciones posibles.</p>
+<p><strong>1.3. Análisis de Modelos Canónicos</strong>El análisis estructural se sostiene sobre tres pilares conceptuales que deben integrarse para una interpretación robusta:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\sigma_1\)</span>: Esfuerzo principal mayor.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\sigma_2\)</span>: Esfuerzo principal intermedio.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\sigma_3\)</span>: Esfuerzo principal menor.</p></li>
+<li><p><strong>Modelos Geométricos:</strong> Describen la configuración espacial en tres escalas de investigación críticas: <strong>Microscópica</strong> (&lt;10−2 m, requiere microscopía), <strong>Mesoscópica</strong> (escala de muestra o afloramiento, 10−2 a 102 m) y <strong>Macroscópica</strong> (&gt;102 m, estructuras que trascienden el afloramiento y requieren síntesis cartográfica).</p></li>
+<li><p><strong>Modelos Cinemáticos:</strong> Reconstruyen el movimiento de las partículas desde el estado inicial al final, evaluando si la deformación fue coaxial o no-coaxial y determinando la rotación de los componentes internos.</p></li>
+<li><p><strong>Modelos Dinámicos/Mecánicos:</strong> Investigan la relación causal entre fuerzas y esfuerzos (σ). Utilizan modelos analíticos y experimentos análogos (como el uso de arena para el comportamiento frágil y silicona para el dúctil) para validar si una geometría observada es mecánicamente factible bajo un régimen de esfuerzos dado.</p></li>
 </ul>
+<p><strong>1.4. Cuestionario de Consolidación (Tema 1)</strong></p>
+<ol class="arabic simple">
+<li><p>Analice la implicación de la “no-unicidad” en la reconstrucción de una sección estructural: ¿Cómo puede un geólogo validar un modelo si diferentes procesos generan la misma geometría?</p></li>
+<li><p>Distinga entre una observación mesoscópica y una macroscópica en el contexto de una falla de cabalgamiento que se extiende por 50 km.</p></li>
+<li><p>¿Por qué se afirma que la observación geológica es esencialmente bidimensional y qué herramientas matemáticas compensan esta limitación en el modelo geométrico?</p></li>
+</ol>
+<p><strong>1.5. Conexión:</strong> La descripción geométrica es solo el punto de partida; para comprender por qué la roca ha fallado o fluido, debemos transitar hacia el análisis del esfuerzo como motor físico de la distorsión.</p>
+<hr class="docutils" />
 </section>
-<section id="regimenes-de-deformacion">
-<h2>Regímenes de Deformación<a class="headerlink" href="#regimenes-de-deformacion" title="Permalink to this heading">#</a></h2>
+<section id="analisis-de-esfuerzo-stress">
+<h2>2. Análisis de Esfuerzo (Stress)<a class="headerlink" href="#analisis-de-esfuerzo-stress" title="Permalink to this heading">#</a></h2>
+<p><strong>2.1. Estrategia y Contexto:</strong> La cuantificación del esfuerzo es fundamental para predecir la estabilidad de fallas activas y el comportamiento de reservorios. Determinar si un plano fallará no depende solo de la magnitud de la fuerza, sino de la resolución de los esfuerzos en orientaciones específicas de la fábrica rocosa.</p>
+<p><strong>2.2. Fundamentos Físicos:</strong> El esfuerzo es la fuerza por unidad de área. En Geología Estructural, el estado de esfuerzo en un punto se define mediante un tensor que se descompone en:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Componente</p></th>
+<th class="head"><p>Definición técnica</p></th>
+<th class="head"><p>Significado Geológico</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Esfuerzo Normal (σN​)</p></td>
+<td><p>σN​=FN​/A. Actúa perpendicular al plano.</p></td>
+<td><p>Controla la fricción y la compactación.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Esfuerzo de Cizalla (τ)</p></td>
+<td><p>τ=FS​/A. Actúa paralelo al plano.</p></td>
+<td><p>Responsable del deslizamiento y la distorsión.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Es vital distinguir entre el <strong>esfuerzo hidrostático</strong> (σ1​=σ2​=σ3​), que solo genera cambios de volumen, y el <strong>esfuerzo desviatorio</strong>, que es el residuo tras restar el esfuerzo medio y constituye el verdadero motor de la deformación tectónica.</p>
+<p>**2.3. Formulación Analítica en 2D:**En un plano cuya normal forma un ángulo θ con el eje del esfuerzo principal mayor σ1​, los esfuerzos se calculan como:σN​=2σ1​+σ3​​+2σ1​−σ3​​cos(2θ)τ=2σ1​−σ3​​sin(2θ)</p>
+<p>**2.4. El Círculo de Mohr (2D y 3D):**El Círculo de Mohr es la representación geométrica del estado de esfuerzo. En un análisis <strong>3D</strong>, el estado de esfuerzo se representa mediante tres círculos tangentes contenidos dentro de una <strong>Envolvente de Mohr</strong>, que define el límite de ruptura del material. Los diámetros de estos círculos están definidos por los esfuerzos principales (σ1​,σ2​,σ3​). El círculo mayor (σ1​−σ3​) determina el esfuerzo de cizalla máximo (τmaˊx​), crítico para la rotura de la roca.</p>
+<p>**2.5. Teoría del Esfuerzo Efectivo:**Según la Ley de Terzaghi, el esfuerzo que realmente gobierna la falla es el <strong>esfuerzo efectivo</strong> (σ∗):σ∗=σ−Pf​Donde Pf​ es la presión de fluidos. El aumento de Pf​ desplaza el círculo de Mohr hacia la izquierda en el diagrama, permitiendo que la roca alcance la envolvente de falla. Esto explica por qué el <strong>fracturamiento hidráulico</strong> y la reactivación de fallas ocurren sin necesidad de aumentar el esfuerzo diferencial (σ1​−σ3​).</p>
+<p><strong>2.6. Cuestionario de Consolidación (Tema 2)</strong></p>
+<ol class="arabic simple">
+<li><p>Si una roca tiene una cohesión C, ¿cómo afecta la inyección de fluidos a alta presión a la magnitud de τmaˊx​ necesaria para iniciar el deslizamiento?</p></li>
+<li><p>En un estado de esfuerzo 3D donde σ1​&gt;σ2​&gt;σ3​, ¿en qué planos se espera que se inicie la falla y por qué el círculo intermedio (σ1​−σ2​) no suele dictar la ruptura inicial?</p></li>
+<li><p>¿Cuál es la orientación θ óptima para la falla si el material sigue un criterio de Mohr-Coulomb puro?</p></li>
+</ol>
+<p><strong>2.7. Conexión:</strong> El esfuerzo es la causa; la respuesta material a esta causa es la deformación o <em>strain</em>, cuya impronta geométrica sobrevive en el registro rocoso.</p>
+<hr class="docutils" />
+</section>
+<section id="analisis-de-deformacion-strain">
+<h2>3. Análisis de Deformación (Strain)<a class="headerlink" href="#analisis-de-deformacion-strain" title="Permalink to this heading">#</a></h2>
+<p><strong>3.1. Estrategia y Contexto:</strong> La deformación registrada en las rocas permite reconstruir la historia cinemática de una región. Estructuras como boudinage y lineaciones actúan como “fósiles mecánicos” que delatan la orientación y magnitud del elipsoide de deformación finita.</p>
+<p><strong>3.2. Naturaleza de la Deformación:</strong> El <strong>elipsoide de deformación finita</strong> describe el cambio de forma total mediante tres ejes ortogonales X≥Y≥Z (o s1​,s2​,s3​). La deformación es <strong>homogénea</strong> si las líneas originalmente paralelas conservan su paralelismo; de lo contrario, es <strong>heterogénea</strong>, como ocurre en las zonas de cizalla.</p>
+<p><strong>3.3. Cinemática y Trayectorias:</strong></p>
 <ul class="simple">
-<li><p><strong>Deformación elástica:</strong> Deformación reversible; el material recupera su forma original al cesar el esfuerzo.</p></li>
-<li><p><strong>Deformación dúctil (plástica):</strong> Cambio de forma permanente sin fracturamiento visible continuo (típico en niveles corticales medios a profundos).</p></li>
-<li><p><strong>Deformación frágil:</strong> Pérdida de cohesión y generación de fracturas o fallas cuando el esfuerzo supera la resistencia del material.</p></li>
+<li><p><strong>Cizalla Pura (Coaxial):</strong> Los ejes del elipsoide no rotan respecto a las líneas materiales. Se observa acortamiento y extensión en ejes fijos.</p></li>
+<li><p><strong>Cizalla Simple (No coaxial):</strong> Implica rotación interna de los ejes. Es el modelo dominante en fallas transcurrentes y zonas de milonitización.</p></li>
+</ul>
+<p>**3.4. Lineaciones como Indicadores de Strain:**Las lineaciones son elementos penetrativos que se asemejan a “paquetes de espaguetis” en la roca. Se clasifican según su origen (Source: <code class="docutils literal notranslate"><span class="pre">10lineation.pdf</span></code>):</p>
+<ul class="simple">
+<li><p><strong>Slickenlines:</strong> Estrías no penetrativas en superficies de falla que indican el vector de deslizamiento.</p></li>
+<li><p><strong>Lineación de Intersección:</strong> Cruce de dos planos (ej. estratificación S0​ y clivaje axial S1​).</p></li>
+<li><p><strong>Crenulación:</strong> Micro-plegamiento de una foliación previa.</p></li>
+<li><p><strong>Mullions:</strong> Ondulaciones groseras en contactos entre capas competentes e incompetentes.</p></li>
+<li><p><strong>L-tectonitas (Pencil structures):</strong> Rocas con lineación dominante sin foliación clara, indicativas de campos de constricción.</p></li>
+</ul>
+<p>**3.5. Diagrama de Flinn y Ramsay:**La forma del elipsoide se define por el parámetro k:k=RYZ​−1RXY​−1​dondeRXY​=X/Y,RYZ​=Y/Z</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Campo de Deformación</p></th>
+<th class="head"><p>Valor de k</p></th>
+<th class="head"><p>Evidencia Geológica (Boudinage)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Constricción (Prolato)</p></td>
+<td><p>k&gt;1</p></td>
+<td><p>Boudinage cilíndrico, lineaciones minerales intensas.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Deformación Plana</p></td>
+<td><p>k=1</p></td>
+<td><p>Movimiento en 2D, lineaciones de estiramiento claras.</p></td>
+</tr>
+<tr class="row-even"><td><p>Aplanamiento (Oblato)</p></td>
+<td><p>0&lt;k&lt;1</p></td>
+<td><p>Chocolate-tablet boudinage (λ1​&gt;λ2​&gt;1), foliación intensa.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>3.6. Cuestionario de Consolidación (Tema 3)</strong></p>
+<ol class="arabic simple">
+<li><p>Si encuentra en el campo un boudinage tipo “chocolate-tablet”, ¿qué puede inferir sobre el valor de k y el estado de extensión en el plano de la capa?</p></li>
+<li><p>Explique por qué en una cizalla simple la lineación de estiramiento mineral no coincide necesariamente con la dirección de transporte tectónico en etapas iniciales.</p></li>
+<li><p>¿Cómo distinguiría una lineación de intersección de una lineación de estiramiento mineral bajo el microscopio?</p></li>
+</ol>
+<p><strong>3.7. Conexión:</strong> La transición entre el esfuerzo aplicado y la deformación resultante no es lineal; depende de la “personalidad mecánica” o reología del material.</p>
+<hr class="docutils" />
+</section>
+<section id="reologia-y-mecanica-de-rocas">
+<h2>4. Reología y Mecánica de Rocas<a class="headerlink" href="#reologia-y-mecanica-de-rocas" title="Permalink to this heading">#</a></h2>
+<p><strong>4.1. Estrategia y Contexto:</strong> La reología determina si una roca se comportará como un sólido elástico (almacenando energía sísmica) o como un fluido viscoso (fluyendo en la raíz de los orógenos). Esta respuesta depende de la <strong>Ecuación Constitutiva</strong>, el puente matemático entre el tensor de esfuerzos y el de deformación.</p>
+<p><strong>4.2. Modelos Constitutivos Ideales:</strong></p>
+<ul class="simple">
+<li><p>**Elástico (Hooke):**σ=E⋅e. Deformación instantánea y recuperable.</p></li>
+<li><p>**Viscoso (Newtoniano):**σ=η⋅e˙. El esfuerzo es proporcional a la <em>velocidad</em> de deformación.</p></li>
+<li><p><strong>Plástico Perfecto:</strong> Flujo indefinido tras superar un umbral de fluencia (<em>yield stress</em>).</p></li>
+</ul>
+<p><strong>4.3. Modelos Analógicos Complejos:</strong></p>
+<ul class="simple">
+<li><p><strong>Maxwell (Viscoelástico):</strong> Resorte y amortiguador en serie. Crucial para entender la <strong>relajación de esfuerzos</strong> en la litosfera tras un evento tectónico.</p></li>
+<li><p><strong>Kelvin-Voigt (Firmo-viscoso):</strong> En paralelo. Modela la <strong>elasticidad retardada</strong>.</p></li>
+<li><p><strong>Prandtl (Elasto-plástico):</strong> Define el umbral de ruptura frágil tras una etapa elástica.</p></li>
+<li><p><strong>Bingham (Visco-elasto-plástico):</strong> El modelo más robusto para rocas; requiere superar un umbral de esfuerzo para iniciar un flujo viscoso.</p></li>
+</ul>
+<p>**4.4. Factores de Control Ambiental:**La resistencia no es una propiedad fija. El aumento de <strong>Temperatura</strong> (T) y la disminución de la <strong>Velocidad de deformación</strong> (e˙) facilitan la transición al dominio dúctil. Por el contrario, la <strong>Presión de confinamiento</strong> (Pc​) aumenta la resistencia friccional, mientras que la <strong>Presión de fluidos</strong> (Pf​) la reduce drásticamente.</p>
+<p><strong>4.5. Cuestionario de Consolidación (Tema 4)</strong></p>
+<ol class="arabic simple">
+<li><p>¿Qué modelo analógico describe mejor el comportamiento de un glaciar que fluye bajo su propio peso pero se fractura ante un movimiento brusco?</p></li>
+<li><p>Analice por qué un cristal de cuarzo es frágil a 5 km de profundidad pero dúctil a 20 km, manteniendo la misma composición química.</p></li>
+<li><p>En el modelo de Maxwell, ¿qué sucede con el esfuerzo si mantenemos la deformación constante durante un tiempo infinito?</p></li>
+</ol>
+<p><strong>4.6. Conexión:</strong> La interacción de estos factores con la profundidad genera una zonificación mecánica de la Tierra, conocida como la transición frágil-dúctil.</p>
+<hr class="docutils" />
+</section>
+<section id="la-transicion-fragil-ductil-y-mecanismos-de-deformacion">
+<h2>5. La Transición Frágil-Dúctil y Mecanismos de Deformación<a class="headerlink" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion" title="Permalink to this heading">#</a></h2>
+<p><strong>5.1. Estrategia y Contexto:</strong> Los perfiles de resistencia (<em>Strength Profiles</em>) permiten localizar la “zona sismogénica”. La comprensión de estos perfiles es vital para el diseño de estrategias de exploración en sistemas de despegue tectónico y trampas de hidrocarburos.</p>
+<p><strong>5.2. Régimen Frágil (Friccional):</strong> Gobernado por la <strong>Ley de Byerlee</strong>. La resistencia aumenta linealmente con la profundidad debido al incremento de la presión litostática. Es independiente del tipo de roca y depende casi exclusivamente del coeficiente de fricción interna.</p>
+<p><strong>5.3. Régimen Dúctil (Plástico):</strong> Dominado por el flujo plástico (<em>power-law creep</em>). La resistencia disminuye exponencialmente con la temperatura (y por ende, con la profundidad). Aquí, la composición mineralógica (ej. cuarzo vs. olivino) es el factor determinante.</p>
+<p><strong>5.4. El Perfil de Resistencia Cortical:</strong> La intersección de ambos regímenes genera una <strong>“nariz” de máxima resistencia</strong> en la transición frágil-dúctil.</p>
+<ul class="simple">
+<li><p><strong>Cratones fríos:</strong> La “nariz” migra a mayor profundidad, aumentando el espesor de la zona sismogénica.</p></li>
+<li><p><strong>Regiones con alto gradiente geotérmico:</strong> La transición se eleva, debilitando la corteza y facilitando la formación de niveles de despegue someros.</p></li>
+</ul>
+<p><strong>5.5. Mecanismos Microscópicos:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Mecanismo</p></th>
+<th class="head"><p>Dominio</p></th>
+<th class="head"><p>Proceso Físico</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cataclasis</p></td>
+<td><p>Frágil</p></td>
+<td><p>Microfracturamiento, rotación y flujo de partículas granulares.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Difusión (Coble/Nabarro)</p></td>
+<td><p>Dúctil</p></td>
+<td><p>Transferencia de masa átomo a átomo a través de la red o bordes de grano.</p></td>
+</tr>
+<tr class="row-even"><td><p>Disolución por Presión</p></td>
+<td><p>Dúctil/Fluido</p></td>
+<td><p>Disolución en contactos de alto esfuerzo y reprecipitación en sombras de deformación.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>5.6. Cuestionario de Consolidación (Tema 5)</strong></p>
+<ol class="arabic simple">
+<li><p>Evalúe por qué la “nariz” del perfil de resistencia es el lugar preferente para la nucleación de grandes terremotos tectónicos.</p></li>
+<li><p>¿Cómo afectaría un aumento en el contenido de fluidos intersticiales a la profundidad de la transición frágil-dúctil en una zona de subducción?</p></li>
+<li><p>En una milonita, ¿qué criterio microestructural permite diferenciar un mecanismo de dislocación de uno de difusión?</p></li>
+</ol>
+<p><strong>5.7. Conexión:</strong> La geología estructural moderna integra geometría, cinemática y reología para transformar una observación de campo en un modelo geodinámico predictivo.</p>
+<hr class="docutils" />
+</section>
+<section id="seccion-especial-tarjetas-didacticas-flashcards-de-repaso">
+<h2>Sección Especial: Tarjetas Didácticas (Flashcards) de Repaso<a class="headerlink" href="#seccion-especial-tarjetas-didacticas-flashcards-de-repaso" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Anverso:</strong> Problema Inverso (Naturaleza).</p>
+<ul>
+<li><p><strong>Reverso:</strong> Proceso no-único de reconstruir la historia cinemática y dinámica a partir de una geometría final deformada.</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Esfuerzo Efectivo (σ∗).</p>
+<ul>
+<li><p><strong>Reverso:</strong> Esfuerzo normal total menos la presión de fluidos (σ−Pf​); controla la rotura mecánica.</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> L-tectonita.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Roca con fábrica lineal penetrante (ej. pencil structures) sin foliación aparente, típica de campos de constricción.</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Cizalla Simple.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Deformación no-coaxial que implica la rotación de los ejes del elipsoide de deformación durante el proceso.</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Parámetro k de Flinn.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Relación (RXY​−1)/(RYZ​−1) que define si el elipsoide es prolato (k&gt;1), plano (k=1) u oblato (k&lt;1).</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Ley de Byerlee.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Relación empírica donde la resistencia friccional de la corteza frágil aumenta linealmente con la profundidad.</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Modelo de Maxwell.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Modelo viscoelástico (resorte y amortiguador en serie) que explica la relajación de esfuerzos en materiales geológicos.</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Chocolate-tablet boudinage.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Estructura de fragmentación en dos direcciones, indicativa de un campo de aplanamiento (k&lt;1).</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Disolución por Presión.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Mecanismo de deformación por transferencia de masa desde zonas de alta compresión a zonas de baja presión (sombras de deformación).</p></li>
+</ul>
+</li>
+<li><p><strong>Anverso:</strong> Transición Frágil-Dúctil.</p>
+<ul>
+<li><p><strong>Reverso:</strong> Punto de máxima resistencia cortical donde el mecanismo de falla cambia de friccional (Byerlee) a flujo plástico (Power-law).</p></li>
+</ul>
+</li>
 </ul>
 </section>
 </section>
@@ -486,8 +696,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estados-de-esfuerzo">Estados de Esfuerzo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regimenes-de-deformacion">Regímenes de Deformación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico">1. Introducción a la Geología Estructural y Modelado Geológico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-esfuerzo-stress">2. Análisis de Esfuerzo (Stress)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-deformacion-strain">3. Análisis de Deformación (Strain)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reologia-y-mecanica-de-rocas">4. Reología y Mecánica de Rocas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion">5. La Transición Frágil-Dúctil y Mecanismos de Deformación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seccion-especial-tarjetas-didacticas-flashcards-de-repaso">Sección Especial: Tarjetas Didácticas (Flashcards) de Repaso</a></li>
 </ul>
   </nav></div>
 
