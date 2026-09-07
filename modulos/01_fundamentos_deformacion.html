@@ -391,11 +391,42 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico">1. Introducción a la Geología Estructural y Modelado Geológico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-esfuerzo-stress">2. Análisis de Esfuerzo (Stress)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-deformacion-strain">3. Análisis de Deformación (Strain)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reologia-y-mecanica-de-rocas">4. Reología y Mecánica de Rocas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion">5. La Transición Frágil-Dúctil y Mecanismos de Deformación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico">1. Introducción a la Geología Estructural y Modelado Geológico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-y-el-problema-inverso">1.1. Definición y el “Problema Inverso”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-modelos-canonicos">1.2. Análisis de Modelos Canónicos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-esfuerzo-stress">2. Análisis de Esfuerzo (Stress)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estrategia-y-contexto">2.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-fisicos">2.2. Fundamentos Físicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formulacion-analitica-en-2d">2.3. Formulación Analítica en 2D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-circulo-de-mohr-2d-y-3d">2.4. El Círculo de Mohr (2D y 3D)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-del-esfuerzo-efectivo">2.5. Teoría del Esfuerzo Efectivo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-deformacion-strain">3. Análisis de Deformación (Strain)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naturaleza-de-la-deformacion">3.2. Naturaleza de la Deformación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-y-trayectorias">3.3. Cinemática y Trayectorias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lineaciones-como-indicadores-de-strain">3.4. Lineaciones como Indicadores de Strain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrama-de-flinn-y-ramsay">3.5. Diagrama de Flinn y Ramsay</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reologia-y-mecanica-de-rocas">4. Reología y Mecánica de Rocas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-constitutivos-ideales">4.2. Modelos Constitutivos Ideales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-analogicos-complejos">4.3. Modelos Analógicos Complejos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factores-de-control-ambiental">4.4. Factores de Control Ambiental</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion">5. La Transición Frágil-Dúctil y Mecanismos de Deformación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">5.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regimen-fragil-friccional">5.2. Régimen Frágil (Friccional)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regimen-ductil-plastico">5.3. Régimen Dúctil (Plástico)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-perfil-de-resistencia-cortical">5.4. El Perfil de Resistencia Cortical</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mecanismos-microscopicos">5.5. Mecanismos Microscópicos</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -412,19 +443,30 @@ document.write(`
 <section id="introduccion-a-la-geologia-estructural-y-modelado-geologico">
 <h2>1. Introducción a la Geología Estructural y Modelado Geológico<a class="headerlink" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico" title="Permalink to this heading">#</a></h2>
 <p>La Geología Estructural no es una disciplina meramente descriptiva, sino una herramienta analítica de primer orden para <strong>desentrañar</strong> la evolución tectónica de la litosfera. Su importancia estratégica radica en la capacidad de <strong>exhumar</strong> la historia de esfuerzos a partir de arquitecturas rocosas complejas, permitiendo no solo la reconstrucción de orógenos, sino la localización precisa de recursos energéticos, minerales y la evaluación de riesgos sísmicos. Al escrutar las estructuras, el geólogo no observa objetos estáticos, sino registros cinemáticos que permiten <strong>discretizar</strong> eventos tectónicos superpuestos en el tiempo geológico.</p>
-<p>**1.1. Definición y el “Problema Inverso”**La Geología Estructural es el estudio de la arquitectura de la corteza y las causas mecánicas que la originan. El geólogo se enfrenta al <strong>“Problema Inverso”</strong>: a partir de un estado final deformado, debe deducir la trayectoria de deformación (<em>strain path</em>) y el tensor de esfuerzos original. Es imperativo comprender que este problema es, por naturaleza, <strong>no-único</strong> (o no-recíproco); múltiples caminos cinemáticos pueden converger en una geometría final idéntica. Por ello, la interpretación requiere la integración de relaciones temporales para restringir las soluciones posibles.</p>
-<p><strong>1.2. Análisis de Modelos Canónicos</strong>El análisis estructural se sostiene sobre tres pilares conceptuales que deben integrarse para una interpretación robusta:</p>
+<section id="definicion-y-el-problema-inverso">
+<h3>1.1. Definición y el “Problema Inverso”<a class="headerlink" href="#definicion-y-el-problema-inverso" title="Permalink to this heading">#</a></h3>
+<p>La Geología Estructural es el estudio de la arquitectura de la corteza y las causas mecánicas que la originan. El geólogo se enfrenta al <strong>“Problema Inverso”</strong>: a partir de un estado final deformado, debe deducir la trayectoria de deformación (<em>strain path</em>) y el tensor de esfuerzos original. Es imperativo comprender que este problema es, por naturaleza, <strong>no-único</strong> (o no-recíproco); múltiples caminos cinemáticos pueden converger en una geometría final idéntica. Por ello, la interpretación requiere la integración de relaciones temporales para restringir las soluciones posibles.</p>
+</section>
+<section id="analisis-de-modelos-canonicos">
+<h3>1.2. Análisis de Modelos Canónicos<a class="headerlink" href="#analisis-de-modelos-canonicos" title="Permalink to this heading">#</a></h3>
+<p>El análisis estructural se sostiene sobre tres pilares conceptuales que deben integrarse para una interpretación robusta:</p>
 <ul class="simple">
 <li><p><strong>Modelos Geométricos:</strong> Describen la configuración espacial en tres escalas de investigación críticas: <strong>Microscópica</strong> (&lt;10−2 m, requiere microscopía), <strong>Mesoscópica</strong> (escala de muestra o afloramiento, 10−2 a 102 m) y <strong>Macroscópica</strong> (&gt;102 m, estructuras que trascienden el afloramiento y requieren síntesis cartográfica).</p></li>
 <li><p><strong>Modelos Cinemáticos:</strong> Reconstruyen el movimiento de las partículas desde el estado inicial al final, evaluando si la deformación fue coaxial o no-coaxial y determinando la rotación de los componentes internos.</p></li>
 <li><p><strong>Modelos Dinámicos/Mecánicos:</strong> Investigan la relación causal entre fuerzas y esfuerzos (σ). Utilizan modelos analíticos y experimentos análogos (como el uso de arena para el comportamiento frágil y silicona para el dúctil) para validar si una geometría observada es mecánicamente factible bajo un régimen de esfuerzos dado.</p></li>
 </ul>
-<hr class="docutils" />
 </section>
+</section>
+<hr class="docutils" />
 <section id="analisis-de-esfuerzo-stress">
 <h2>2. Análisis de Esfuerzo (Stress)<a class="headerlink" href="#analisis-de-esfuerzo-stress" title="Permalink to this heading">#</a></h2>
-<p><strong>2.1. Estrategia y Contexto:</strong> La cuantificación del esfuerzo es fundamental para predecir la estabilidad de fallas activas y el comportamiento de reservorios. Determinar si un plano fallará no depende solo de la magnitud de la fuerza, sino de la resolución de los esfuerzos en orientaciones específicas de la fábrica rocosa.</p>
-<p><strong>2.2. Fundamentos Físicos:</strong> El esfuerzo es la fuerza por unidad de área. En Geología Estructural, el estado de esfuerzo en un punto se define mediante un tensor que se descompone en:</p>
+<section id="estrategia-y-contexto">
+<h3>2.1. Estrategia y Contexto<a class="headerlink" href="#estrategia-y-contexto" title="Permalink to this heading">#</a></h3>
+<p>La cuantificación del esfuerzo es fundamental para predecir la estabilidad de fallas activas y el comportamiento de reservorios. Determinar si un plano fallará no depende solo de la magnitud de la fuerza, sino de la resolución de los esfuerzos en orientaciones específicas de la fábrica rocosa.</p>
+</section>
+<section id="fundamentos-fisicos">
+<h3>2.2. Fundamentos Físicos<a class="headerlink" href="#fundamentos-fisicos" title="Permalink to this heading">#</a></h3>
+<p>El esfuerzo es la fuerza por unidad de área. En Geología Estructural, el estado de esfuerzo en un punto se define mediante un tensor que se descompone en:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Componente</p></th>
@@ -445,21 +487,41 @@ document.write(`
 </table>
 </div>
 <p>Es vital distinguir entre el <strong>esfuerzo hidrostático</strong> (σ1​=σ2​=σ3​), que solo genera cambios de volumen, y el <strong>esfuerzo desviatorio</strong>, que es el residuo tras restar el esfuerzo medio y constituye el verdadero motor de la deformación tectónica.</p>
-<p>**2.3. Formulación Analítica en 2D:**En un plano cuya normal forma un ángulo θ con el eje del esfuerzo principal mayor σ1​, los esfuerzos se calculan como:σN​=2σ1​+σ3​​+2σ1​−σ3​​cos(2θ)τ=2σ1​−σ3​​sin(2θ)</p>
-<p>**2.4. El Círculo de Mohr (2D y 3D):**El Círculo de Mohr es la representación geométrica del estado de esfuerzo. En un análisis <strong>3D</strong>, el estado de esfuerzo se representa mediante tres círculos tangentes contenidos dentro de una <strong>Envolvente de Mohr</strong>, que define el límite de ruptura del material. Los diámetros de estos círculos están definidos por los esfuerzos principales (σ1​,σ2​,σ3​). El círculo mayor (σ1​−σ3​) determina el esfuerzo de cizalla máximo (τmaˊx​), crítico para la rotura de la roca.</p>
-<p>**2.5. Teoría del Esfuerzo Efectivo:**Según la Ley de Terzaghi, el esfuerzo que realmente gobierna la falla es el <strong>esfuerzo efectivo</strong> (σ∗):σ∗=σ−Pf​Donde Pf​ es la presión de fluidos. El aumento de Pf​ desplaza el círculo de Mohr hacia la izquierda en el diagrama, permitiendo que la roca alcance la envolvente de falla. Esto explica por qué el <strong>fracturamiento hidráulico</strong> y la reactivación de fallas ocurren sin necesidad de aumentar el esfuerzo diferencial (σ1​−σ3​).</p>
-<hr class="docutils" />
 </section>
+<section id="formulacion-analitica-en-2d">
+<h3>2.3. Formulación Analítica en 2D<a class="headerlink" href="#formulacion-analitica-en-2d" title="Permalink to this heading">#</a></h3>
+<p>En un plano cuya normal forma un ángulo θ con el eje del esfuerzo principal mayor σ1​, los esfuerzos se calculan como:σN​=2σ1​+σ3​​+2σ1​−σ3​​cos(2θ)τ=2σ1​−σ3​​sin(2θ)</p>
+</section>
+<section id="el-circulo-de-mohr-2d-y-3d">
+<h3>2.4. El Círculo de Mohr (2D y 3D)<a class="headerlink" href="#el-circulo-de-mohr-2d-y-3d" title="Permalink to this heading">#</a></h3>
+<p>El Círculo de Mohr es la representación geométrica del estado de esfuerzo. En un análisis <strong>3D</strong>, el estado de esfuerzo se representa mediante tres círculos tangentes contenidos dentro de una <strong>Envolvente de Mohr</strong>, que define el límite de ruptura del material. Los diámetros de estos círculos están definidos por los esfuerzos principales (σ1​,σ2​,σ3​). El círculo mayor (σ1​−σ3​) determina el esfuerzo de cizalla máximo (τmaˊx​), crítico para la rotura de la roca.</p>
+</section>
+<section id="teoria-del-esfuerzo-efectivo">
+<h3>2.5. Teoría del Esfuerzo Efectivo<a class="headerlink" href="#teoria-del-esfuerzo-efectivo" title="Permalink to this heading">#</a></h3>
+<p>Según la Ley de Terzaghi, el esfuerzo que realmente gobierna la falla es el <strong>esfuerzo efectivo</strong> (σ∗):σ∗=σ−Pf​Donde Pf​ es la presión de fluidos. El aumento de Pf​ desplaza el círculo de Mohr hacia la izquierda en el diagrama, permitiendo que la roca alcance la envolvente de falla. Esto explica por qué el <strong>fracturamiento hidráulico</strong> y la reactivación de fallas ocurren sin necesidad de aumentar el esfuerzo diferencial (σ1​−σ3​).</p>
+</section>
+</section>
+<hr class="docutils" />
 <section id="analisis-de-deformacion-strain">
 <h2>3. Análisis de Deformación (Strain)<a class="headerlink" href="#analisis-de-deformacion-strain" title="Permalink to this heading">#</a></h2>
-<p><strong>3.1. Estrategia y Contexto:</strong> La deformación registrada en las rocas permite reconstruir la historia cinemática de una región. Estructuras como boudinage y lineaciones actúan como “fósiles mecánicos” que delatan la orientación y magnitud del elipsoide de deformación finita.</p>
-<p><strong>3.2. Naturaleza de la Deformación:</strong> El <strong>elipsoide de deformación finita</strong> describe el cambio de forma total mediante tres ejes ortogonales X≥Y≥Z (o s1​,s2​,s3​). La deformación es <strong>homogénea</strong> si las líneas originalmente paralelas conservan su paralelismo; de lo contrario, es <strong>heterogénea</strong>, como ocurre en las zonas de cizalla.</p>
-<p><strong>3.3. Cinemática y Trayectorias:</strong></p>
+<section id="id1">
+<h3>3.1. Estrategia y Contexto<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>La deformación registrada en las rocas permite reconstruir la historia cinemática de una región. Estructuras como boudinage y lineaciones actúan como “fósiles mecánicos” que delatan la orientación y magnitud del elipsoide de deformación finita.</p>
+</section>
+<section id="naturaleza-de-la-deformacion">
+<h3>3.2. Naturaleza de la Deformación<a class="headerlink" href="#naturaleza-de-la-deformacion" title="Permalink to this heading">#</a></h3>
+<p>El <strong>elipsoide de deformación finita</strong> describe el cambio de forma total mediante tres ejes ortogonales X≥Y≥Z (o s1​,s2​,s3​). La deformación es <strong>homogénea</strong> si las líneas originalmente paralelas conservan su paralelismo; de lo contrario, es <strong>heterogénea</strong>, como ocurre en las zonas de cizalla.</p>
+</section>
+<section id="cinematica-y-trayectorias">
+<h3>3.3. Cinemática y Trayectorias<a class="headerlink" href="#cinematica-y-trayectorias" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Cizalla Pura (Coaxial):</strong> Los ejes del elipsoide no rotan respecto a las líneas materiales. Se observa acortamiento y extensión en ejes fijos.</p></li>
 <li><p><strong>Cizalla Simple (No coaxial):</strong> Implica rotación interna de los ejes. Es el modelo dominante en fallas transcurrentes y zonas de milonitización.</p></li>
 </ul>
-<p>**3.4. Lineaciones como Indicadores de Strain:**Las lineaciones son elementos penetrativos que se asemejan a “paquetes de espaguetis” en la roca. Se clasifican según su origen (Source: <code class="docutils literal notranslate"><span class="pre">10lineation.pdf</span></code>):</p>
+</section>
+<section id="lineaciones-como-indicadores-de-strain">
+<h3>3.4. Lineaciones como Indicadores de Strain<a class="headerlink" href="#lineaciones-como-indicadores-de-strain" title="Permalink to this heading">#</a></h3>
+<p>Las lineaciones son elementos penetrativos que se asemejan a “paquetes de espaguetis” en la roca. Se clasifican según su origen:</p>
 <ul class="simple">
 <li><p><strong>Slickenlines:</strong> Estrías no penetrativas en superficies de falla que indican el vector de deslizamiento.</p></li>
 <li><p><strong>Lineación de Intersección:</strong> Cruce de dos planos (ej. estratificación S0​ y clivaje axial S1​).</p></li>
@@ -467,7 +529,10 @@ document.write(`
 <li><p><strong>Mullions:</strong> Ondulaciones groseras en contactos entre capas competentes e incompetentes.</p></li>
 <li><p><strong>L-tectonitas (Pencil structures):</strong> Rocas con lineación dominante sin foliación clara, indicativas de campos de constricción.</p></li>
 </ul>
-<p>**3.5. Diagrama de Flinn y Ramsay:**La forma del elipsoide se define por el parámetro k:k=RYZ​−1RXY​−1​dondeRXY​=X/Y,RYZ​=Y/Z</p>
+</section>
+<section id="diagrama-de-flinn-y-ramsay">
+<h3>3.5. Diagrama de Flinn y Ramsay<a class="headerlink" href="#diagrama-de-flinn-y-ramsay" title="Permalink to this heading">#</a></h3>
+<p>La forma del elipsoide se define por el parámetro k:k=RYZ​−1RXY​−1​dondeRXY​=X/Y,RYZ​=Y/Z</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Campo de Deformación</p></th>
@@ -491,38 +556,62 @@ document.write(`
 </tbody>
 </table>
 </div>
-<hr class="docutils" />
 </section>
+</section>
+<hr class="docutils" />
 <section id="reologia-y-mecanica-de-rocas">
 <h2>4. Reología y Mecánica de Rocas<a class="headerlink" href="#reologia-y-mecanica-de-rocas" title="Permalink to this heading">#</a></h2>
-<p><strong>4.1. Estrategia y Contexto:</strong> La reología determina si una roca se comportará como un sólido elástico (almacenando energía sísmica) o como un fluido viscoso (fluyendo en la raíz de los orógenos). Esta respuesta depende de la <strong>Ecuación Constitutiva</strong>, el puente matemático entre el tensor de esfuerzos y el de deformación.</p>
-<p><strong>4.2. Modelos Constitutivos Ideales:</strong></p>
+<section id="id2">
+<h3>4.1. Estrategia y Contexto<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>La reología determina si una roca se comportará como un sólido elástico (almacenando energía sísmica) o como un fluido viscoso (fluyendo en la raíz de los orógenos). Esta respuesta depende de la <strong>Ecuación Constitutiva</strong>, el puente matemático entre el tensor de esfuerzos y el de deformación.</p>
+</section>
+<section id="modelos-constitutivos-ideales">
+<h3>4.2. Modelos Constitutivos Ideales<a class="headerlink" href="#modelos-constitutivos-ideales" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>**Elástico (Hooke):**σ=E⋅e. Deformación instantánea y recuperable.</p></li>
 <li><p>**Viscoso (Newtoniano):**σ=η⋅e˙. El esfuerzo es proporcional a la <em>velocidad</em> de deformación.</p></li>
 <li><p><strong>Plástico Perfecto:</strong> Flujo indefinido tras superar un umbral de fluencia (<em>yield stress</em>).</p></li>
 </ul>
-<p><strong>4.3. Modelos Analógicos Complejos:</strong></p>
+</section>
+<section id="modelos-analogicos-complejos">
+<h3>4.3. Modelos Analógicos Complejos<a class="headerlink" href="#modelos-analogicos-complejos" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Maxwell (Viscoelástico):</strong> Resorte y amortiguador en serie. Crucial para entender la <strong>relajación de esfuerzos</strong> en la litosfera tras un evento tectónico.</p></li>
 <li><p><strong>Kelvin-Voigt (Firmo-viscoso):</strong> En paralelo. Modela la <strong>elasticidad retardada</strong>.</p></li>
 <li><p><strong>Prandtl (Elasto-plástico):</strong> Define el umbral de ruptura frágil tras una etapa elástica.</p></li>
 <li><p><strong>Bingham (Visco-elasto-plástico):</strong> El modelo más robusto para rocas; requiere superar un umbral de esfuerzo para iniciar un flujo viscoso.</p></li>
 </ul>
-<p>**4.4. Factores de Control Ambiental:**La resistencia no es una propiedad fija. El aumento de <strong>Temperatura</strong> (T) y la disminución de la <strong>Velocidad de deformación</strong> (e˙) facilitan la transición al dominio dúctil. Por el contrario, la <strong>Presión de confinamiento</strong> (Pc​) aumenta la resistencia friccional, mientras que la <strong>Presión de fluidos</strong> (Pf​) la reduce drásticamente.</p>
-<hr class="docutils" />
 </section>
+<section id="factores-de-control-ambiental">
+<h3>4.4. Factores de Control Ambiental<a class="headerlink" href="#factores-de-control-ambiental" title="Permalink to this heading">#</a></h3>
+<p>La resistencia no es una propiedad fija. El aumento de <strong>Temperatura</strong> (T) y la disminución de la <strong>Velocidad de deformación</strong> (e˙) facilitan la transición al dominio dúctil. Por el contrario, la <strong>Presión de confinamiento</strong> (Pc​) aumenta la resistencia friccional, mientras que la <strong>Presión de fluidos</strong> (Pf​) la reduce drásticamente.</p>
+</section>
+</section>
+<hr class="docutils" />
 <section id="la-transicion-fragil-ductil-y-mecanismos-de-deformacion">
 <h2>5. La Transición Frágil-Dúctil y Mecanismos de Deformación<a class="headerlink" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion" title="Permalink to this heading">#</a></h2>
-<p><strong>5.1. Estrategia y Contexto:</strong> Los perfiles de resistencia (<em>Strength Profiles</em>) permiten localizar la “zona sismogénica”. La comprensión de estos perfiles es vital para el diseño de estrategias de exploración en sistemas de despegue tectónico y trampas de hidrocarburos.</p>
-<p><strong>5.2. Régimen Frágil (Friccional):</strong> Gobernado por la <strong>Ley de Byerlee</strong>. La resistencia aumenta linealmente con la profundidad debido al incremento de la presión litostática. Es independiente del tipo de roca y depende casi exclusivamente del coeficiente de fricción interna.</p>
-<p><strong>5.3. Régimen Dúctil (Plástico):</strong> Dominado por el flujo plástico (<em>power-law creep</em>). La resistencia disminuye exponencialmente con la temperatura (y por ende, con la profundidad). Aquí, la composición mineralógica (ej. cuarzo vs. olivino) es el factor determinante.</p>
-<p><strong>5.4. El Perfil de Resistencia Cortical:</strong> La intersección de ambos regímenes genera una <strong>“nariz” de máxima resistencia</strong> en la transición frágil-dúctil.</p>
+<section id="id3">
+<h3>5.1. Estrategia y Contexto<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>Los perfiles de resistencia (<em>Strength Profiles</em>) permiten localizar la “zona sismogénica”. La comprensión de estos perfiles es vital para el diseño de estrategias de exploración en sistemas de despegue tectónico y trampas de hidrocarburos.</p>
+</section>
+<section id="regimen-fragil-friccional">
+<h3>5.2. Régimen Frágil (Friccional)<a class="headerlink" href="#regimen-fragil-friccional" title="Permalink to this heading">#</a></h3>
+<p>Gobernado por la <strong>Ley de Byerlee</strong>. La resistencia aumenta linealmente con la profundidad debido al incremento de la presión litostática. Es independiente del tipo de roca y depende casi exclusivamente del coeficiente de fricción interna.</p>
+</section>
+<section id="regimen-ductil-plastico">
+<h3>5.3. Régimen Dúctil (Plástico)<a class="headerlink" href="#regimen-ductil-plastico" title="Permalink to this heading">#</a></h3>
+<p>Dominado por el flujo plástico (<em>power-law creep</em>). La resistencia disminuye exponencialmente con la temperatura (y por ende, con la profundidad). Aquí, la composición mineralógica (ej. cuarzo vs. olivino) es el factor determinante.</p>
+</section>
+<section id="el-perfil-de-resistencia-cortical">
+<h3>5.4. El Perfil de Resistencia Cortical<a class="headerlink" href="#el-perfil-de-resistencia-cortical" title="Permalink to this heading">#</a></h3>
+<p>La intersección de ambos regímenes genera una <strong>“nariz” de máxima resistencia</strong> en la transición frágil-dúctil.</p>
 <ul class="simple">
 <li><p><strong>Cratones fríos:</strong> La “nariz” migra a mayor profundidad, aumentando el espesor de la zona sismogénica.</p></li>
 <li><p><strong>Regiones con alto gradiente geotérmico:</strong> La transición se eleva, debilitando la corteza y facilitando la formación de niveles de despegue someros.</p></li>
 </ul>
-<p><strong>5.5. Mecanismos Microscópicos:</strong></p>
+</section>
+<section id="mecanismos-microscopicos">
+<h3>5.5. Mecanismos Microscópicos<a class="headerlink" href="#mecanismos-microscopicos" title="Permalink to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Mecanismo</p></th>
@@ -546,6 +635,7 @@ document.write(`
 </tbody>
 </table>
 </div>
+</section>
 </section>
 </section>
 
@@ -604,11 +694,42 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico">1. Introducción a la Geología Estructural y Modelado Geológico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-esfuerzo-stress">2. Análisis de Esfuerzo (Stress)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-deformacion-strain">3. Análisis de Deformación (Strain)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reologia-y-mecanica-de-rocas">4. Reología y Mecánica de Rocas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion">5. La Transición Frágil-Dúctil y Mecanismos de Deformación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-la-geologia-estructural-y-modelado-geologico">1. Introducción a la Geología Estructural y Modelado Geológico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-y-el-problema-inverso">1.1. Definición y el “Problema Inverso”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-modelos-canonicos">1.2. Análisis de Modelos Canónicos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-esfuerzo-stress">2. Análisis de Esfuerzo (Stress)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estrategia-y-contexto">2.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-fisicos">2.2. Fundamentos Físicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formulacion-analitica-en-2d">2.3. Formulación Analítica en 2D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-circulo-de-mohr-2d-y-3d">2.4. El Círculo de Mohr (2D y 3D)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-del-esfuerzo-efectivo">2.5. Teoría del Esfuerzo Efectivo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-deformacion-strain">3. Análisis de Deformación (Strain)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naturaleza-de-la-deformacion">3.2. Naturaleza de la Deformación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-y-trayectorias">3.3. Cinemática y Trayectorias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lineaciones-como-indicadores-de-strain">3.4. Lineaciones como Indicadores de Strain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrama-de-flinn-y-ramsay">3.5. Diagrama de Flinn y Ramsay</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reologia-y-mecanica-de-rocas">4. Reología y Mecánica de Rocas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-constitutivos-ideales">4.2. Modelos Constitutivos Ideales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-analogicos-complejos">4.3. Modelos Analógicos Complejos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factores-de-control-ambiental">4.4. Factores de Control Ambiental</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transicion-fragil-ductil-y-mecanismos-de-deformacion">5. La Transición Frágil-Dúctil y Mecanismos de Deformación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">5.1. Estrategia y Contexto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regimen-fragil-friccional">5.2. Régimen Frágil (Friccional)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regimen-ductil-plastico">5.3. Régimen Dúctil (Plástico)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-perfil-de-resistencia-cortical">5.4. El Perfil de Resistencia Cortical</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mecanismos-microscopicos">5.5. Mecanismos Microscópicos</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
