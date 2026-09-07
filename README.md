@@ -1,4 +1,4 @@
-# Apuntes sobre Geología Estructural
+# Apuntes sobre Geología Estructural (En Construcción)
 
 La geología estructural es la rama de la geología que estudia la deformación de las rocas y la disposición de las estructuras geológicas en la corteza terrestre. Su objetivo es comprender cómo, cuándo y por qué se formaron pliegues, fallas, fracturas, foliación y otras estructuras que registran la historia tectónica de una región.
 
