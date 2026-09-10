@@ -185,6 +185,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Módulo II: Deformación en el Régimen Frágil (Fracturas, Diaclasas y Fallas)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_regimen_ductil.html">Módulo III: Deformación en el Régimen Dúctil (Pliegues, Foliaciones, Lineaciones y Zonas de Cizalla)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_reconstruccion_tectonica.html">Módulo IV: Métodos de Reconstrucción Estructural y Tectónica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_sistem_structural.html">Módulo V: Sistemas Estructurales</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glosario</span></p>
 <ul class="nav bd-sidenav">
@@ -433,35 +434,35 @@ document.write(`
 <h1>Módulo II: Deformación en el Régimen Frágil (Fracturas, Diaclasas y Fallas)<a class="headerlink" href="#modulo-ii-deformacion-en-el-regimen-fragil-fracturas-diaclasas-y-fallas" title="Permalink to this heading">#</a></h1>
 <section id="mecanica-de-fractura-y-criterios-de-falla">
 <h2>1. Mecánica de Fractura y Criterios de Falla<a class="headerlink" href="#mecanica-de-fractura-y-criterios-de-falla" title="Permalink to this heading">#</a></h2>
-<p>La deformación frágil o discontinua se caracteriza por la pérdida de cohesión y la generación de superficies discretas de ruptura (fallas, diaclasas, venas) cuando los esfuerzos superan la resistencia elástica del macizo rocoso[cite: 3, 23]. Se restringe principalmente a la corteza superior fría (primeros ~5 a 10–15 km), en lo que se conoce como régimen de deslizamiento friccional[cite: 2, 38].</p>
+<p>La deformación frágil o discontinua se caracteriza por la pérdida de cohesión y la generación de superficies discretas de ruptura (fallas, diaclasas, venas) cuando los esfuerzos superan la resistencia elástica del macizo rocoso. Se restringe principalmente a la corteza superior fría (primeros ~5 a 10–15 km), en lo que se conoce como régimen de deslizamiento friccional.</p>
 <section id="criterios-de-ruptura-y-envolventes-en-el-espacio-de-mohr-sigma-n-tau">
 <h3>1.1. Criterios de Ruptura y Envolventes en el Espacio de Mohr (<span class="math notranslate nohighlight">\(\sigma_n, \tau\)</span>)<a class="headerlink" href="#criterios-de-ruptura-y-envolventes-en-el-espacio-de-mohr-sigma-n-tau" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Criterio de Fricción de Coulomb-Navier (Fracturas de Cizalla)</strong>:</p>
 <ul>
-<li><p>Gobierna el fallo por cizalla en compresión[cite: 2, 3]. Se define mediante la recta envolvente:
+<li><p>Gobierna el fallo por cizalla en compresión. Se define mediante la recta envolvente:
 $<span class="math notranslate nohighlight">\(\tau = C_0 + \mu \, \sigma_n = C_0 + \sigma_n \tan\phi\)</span><span class="math notranslate nohighlight">\(
-donde \)</span>C_0<span class="math notranslate nohighlight">\( es la cohesión intrínseca (resistencia de la roca cuando el esfuerzo normal \)</span>\sigma_n = 0<span class="math notranslate nohighlight">\(), \)</span>\mu<span class="math notranslate nohighlight">\( es el coeficiente de fricción interna y \)</span>\phi$ es el ángulo de fricción interna[cite: 35, 38].</p></li>
-<li><p>Los planos de fractura de cizalla conjugados se forman a un ángulo característico agudo respecto a <span class="math notranslate nohighlight">\(\sigma_1\)</span> (<span class="math notranslate nohighlight">\(\theta \approx 30^\circ\text{–}35^\circ\)</span>), conteniendo la línea de intersección al eje intermedio <span class="math notranslate nohighlight">\(\sigma_2\)</span>[cite: 2, 6, 38].</p></li>
-<li><p><strong>Criterio de reactivación friccional (Ley de Byerlee / Fallas preexistentes)</strong>: Si ya existe un plano de discontinuidad, la cohesión es prácticamente nula (<span class="math notranslate nohighlight">\(C_0 = 0\)</span>) y la envolvente pasa por el origen; el movimiento se reanuda a un esfuerzo diferencial significativamente menor (deslizamiento friccional)[cite: 35, 42].</p></li>
+donde \)</span>C_0<span class="math notranslate nohighlight">\( es la cohesión intrínseca (resistencia de la roca cuando el esfuerzo normal \)</span>\sigma_n = 0<span class="math notranslate nohighlight">\(), \)</span>\mu<span class="math notranslate nohighlight">\( es el coeficiente de fricción interna y \)</span>\phi$ es el ángulo de fricción interna.</p></li>
+<li><p>Los planos de fractura de cizalla conjugados se forman a un ángulo característico agudo respecto a <span class="math notranslate nohighlight">\(\sigma_1\)</span> (<span class="math notranslate nohighlight">\(\theta \approx 30^\circ\text{–}35^\circ\)</span>), conteniendo la línea de intersección al eje intermedio <span class="math notranslate nohighlight">\(\sigma_2\)</span>.</p></li>
+<li><p><strong>Criterio de reactivación friccional (Ley de Byerlee / Fallas preexistentes)</strong>: Si ya existe un plano de discontinuidad, la cohesión es prácticamente nula (<span class="math notranslate nohighlight">\(C_0 = 0\)</span>) y la envolvente pasa por el origen; el movimiento se reanuda a un esfuerzo diferencial significativamente menor (deslizamiento friccional).</p></li>
 </ul>
 </li>
 <li><p><strong>Criterio de Griffith (Fracturación Tensional)</strong>:</p>
 <ul>
 <li><p>Explica la rotura a partir de la concentración de esfuerzos en los extremos de microfisuras o defectos elípticos preexistentes.</p></li>
-<li><p>La fractura por tensión pura ocurre cuando el esfuerzo principal menor alcanza la resistencia a la tracción (<span class="math notranslate nohighlight">\(\sigma_3 \le -T_0\)</span>) y el esfuerzo diferencial es pequeño (<span class="math notranslate nohighlight">\(\sigma_1 - \sigma_3 &lt; 4T_0\)</span>)[cite: 16]. Teóricamente, la resistencia a la tracción es aproximadamente la mitad de la cohesión (<span class="math notranslate nohighlight">\(T_0 \approx C_0 / 2\)</span>)[cite: 38].</p></li>
+<li><p>La fractura por tensión pura ocurre cuando el esfuerzo principal menor alcanza la resistencia a la tracción (<span class="math notranslate nohighlight">\(\sigma_3 \le -T_0\)</span>) y el esfuerzo diferencial es pequeño (<span class="math notranslate nohighlight">\(\sigma_1 - \sigma_3 &lt; 4T_0\)</span>). Teóricamente, la resistencia a la tracción es aproximadamente la mitad de la cohesión (<span class="math notranslate nohighlight">\(T_0 \approx C_0 / 2\)</span>).</p></li>
 <li><p>En la mecánica de fractura lineal elástica (LEFM), la propagación en Modo I está controlada por el factor de intensidad de esfuerzo:
 $<span class="math notranslate nohighlight">\(K_I = Y \, \sigma_t \sqrt{\pi c}\)</span><span class="math notranslate nohighlight">\(
-donde \)</span>\sigma_t<span class="math notranslate nohighlight">\( es el esfuerzo tensional remoto, \)</span>c<span class="math notranslate nohighlight">\( es la semilongitud de la grieta y \)</span>Y<span class="math notranslate nohighlight">\( es un parámetro de forma geométrico[cite: 2]. La rotura se propaga cuando \)</span>K_I \ge K_{Ic}<span class="math notranslate nohighlight">\( (tenacidad a la fractura del material)[cite: 2, 9]. Cuanto mayor es la fisura preexistente (\)</span>c$), menor es el esfuerzo remoto requerido para propagarla[cite: 2].</p></li>
+donde \)</span>\sigma_t<span class="math notranslate nohighlight">\( es el esfuerzo tensional remoto, \)</span>c<span class="math notranslate nohighlight">\( es la semilongitud de la grieta y \)</span>Y<span class="math notranslate nohighlight">\( es un parámetro de forma geométrico. La rotura se propaga cuando \)</span>K_I \ge K_{Ic}<span class="math notranslate nohighlight">\( (tenacidad a la fractura del material). Cuanto mayor es la fisura preexistente (\)</span>c$), menor es el esfuerzo remoto requerido para propagarla.</p></li>
 </ul>
 </li>
 <li><p><strong>Influencia de la Presión de Poros / Fluidos (<span class="math notranslate nohighlight">\(P_f\)</span>)</strong>:</p>
 <ul>
 <li><p>De acuerdo con el principio de esfuerzo efectivo de Terzaghi:
 $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</span>$</p></li>
-<li><p>Un aumento en la presión de fluidos (<span class="math notranslate nohighlight">\(P_f\)</span>) reduce los esfuerzos normales en todos los planos por igual sin alterar el esfuerzo diferencial (<span class="math notranslate nohighlight">\(\sigma_1 - \sigma_3\)</span>), desplazando el círculo de Mohr hacia la izquierda[cite: 2].</p></li>
-<li><p>Este mecanismo desencadena <strong>hidrofracturación</strong>, sismicidad inducida en yacimientos y reactivación de fallas a profundidades considerables donde los esfuerzos tectónicos por sí solos no alcanzarían la envolvente[cite: 2].</p></li>
-<li><p>Al abrirse la fractura tensional, el volumen libre aumenta, la presión del fluido desciende abruptamente y los solutos minerales precipitan rápidamente, sellando la fractura en forma de venas o filones (<em>crack-seal</em>)[cite: 2].</p></li>
+<li><p>Un aumento en la presión de fluidos (<span class="math notranslate nohighlight">\(P_f\)</span>) reduce los esfuerzos normales en todos los planos por igual sin alterar el esfuerzo diferencial (<span class="math notranslate nohighlight">\(\sigma_1 - \sigma_3\)</span>), desplazando el círculo de Mohr hacia la izquierda.</p></li>
+<li><p>Este mecanismo desencadena <strong>hidrofracturación</strong>, sismicidad inducida en yacimientos y reactivación de fallas a profundidades considerables donde los esfuerzos tectónicos por sí solos no alcanzarían la envolvente.</p></li>
+<li><p>Al abrirse la fractura tensional, el volumen libre aumenta, la presión del fluido desciende abruptamente y los solutos minerales precipitan rápidamente, sellando la fractura en forma de venas o filones (<em>crack-seal</em>).</p></li>
 </ul>
 </li>
 </ul>
@@ -472,24 +473,24 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 <ul class="simple">
 <li><p><strong>Modo I (Apertura / Extensión)</strong>:</p>
 <ul>
-<li><p>Desplazamiento perpendicular al plano de discontinuidad[cite: 3].</p></li>
-<li><p>Se orientan rigurosamente <strong>paralelas al plano formado por <span class="math notranslate nohighlight">\(\sigma_1\)</span> y <span class="math notranslate nohighlight">\(\sigma_2\)</span>, y perpendiculares al esfuerzo principal menor <span class="math notranslate nohighlight">\(\sigma_3\)</span></strong>[cite: 2, 3, 6, 20].</p></li>
-<li><p><em>Morfología</em>: Grietas abiertas en superficie, fisuras, diques ígneos si son ocupadas por magma, o venas/filones si precipitan fluidos hidrotermales[cite: 2].</p></li>
+<li><p>Desplazamiento perpendicular al plano de discontinuidad.</p></li>
+<li><p>Se orientan rigurosamente <strong>paralelas al plano formado por <span class="math notranslate nohighlight">\(\sigma_1\)</span> y <span class="math notranslate nohighlight">\(\sigma_2\)</span>, y perpendiculares al esfuerzo principal menor <span class="math notranslate nohighlight">\(\sigma_3\)</span></strong>.</p></li>
+<li><p><em>Morfología</em>: Grietas abiertas en superficie, fisuras, diques ígneos si son ocupadas por magma, o venas/filones si precipitan fluidos hidrotermales.</p></li>
 </ul>
 </li>
 <li><p><strong>Modo II (Deslizamiento en el plano / Deslizamiento por cizalla)</strong>:</p>
 <ul>
-<li><p>Desplazamiento relativo paralelo al plano y perpendicular a la línea o frente de fractura (fallamiento por cizalla en el plano)[cite: 38].</p></li>
+<li><p>Desplazamiento relativo paralelo al plano y perpendicular a la línea o frente de fractura (fallamiento por cizalla en el plano).</p></li>
 </ul>
 </li>
 <li><p><strong>Modo III (Desgarre fuera del plano / Cizalla transversal)</strong>:</p>
 <ul>
-<li><p>Desplazamiento cizallante paralelo al plano de discontinuidad y paralelo a la línea o frente de propagación de fractura[cite: 38].</p></li>
+<li><p>Desplazamiento cizallante paralelo al plano de discontinuidad y paralelo a la línea o frente de propagación de fractura.</p></li>
 </ul>
 </li>
 <li><p><strong>Modo IV (Antifisura / Cierre)</strong>:</p>
 <ul>
-<li><p>Desplazamiento en sentido de cierre por compactación localizada o disolución por presión (bandas de compactación, estilolitos)[cite: 19]. Los estilolitos se forman perpendiculares a la dirección del máximo acortamiento (<span class="math notranslate nohighlight">\(\sigma_1\)</span>)[cite: 19].</p></li>
+<li><p>Desplazamiento en sentido de cierre por compactación localizada o disolución por presión (bandas de compactación, estilolitos). Los estilolitos se forman perpendiculares a la dirección del máximo acortamiento (<span class="math notranslate nohighlight">\(\sigma_1\)</span>).</p></li>
 </ul>
 </li>
 </ul>
@@ -498,25 +499,25 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 <section id="diaclasas-y-sistemas-de-fracturacion">
 <h3>1.3. Diaclasas y Sistemas de Fracturación<a class="headerlink" href="#diaclasas-y-sistemas-de-fracturacion" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Las diaclasas son fracturas Mode I sin desplazamiento relativo de cizalla apreciable paralelo al plano[cite: 12, 14, 18].</p></li>
+<li><p>Las diaclasas son fracturas Mode I sin desplazamiento relativo de cizalla apreciable paralelo al plano.</p></li>
 <li><p><strong>Sistemáticas vs. No Sistemáticas</strong>:</p>
 <ul>
-<li><p><em>Sistemáticas</em>: Planas, paralelas, espaciadas regularmente, agrupadas en familias (<em>joint sets</em>) que responden a un campo de esfuerzos regional o al doblamiento de capas[cite: 2].</p></li>
-<li><p><em>No sistemáticas</em>: Curvas, de geometría irregular y terminaciones ciegas contra fracturas preexistentes[cite: 2].</p></li>
+<li><p><em>Sistemáticas</em>: Planas, paralelas, espaciadas regularmente, agrupadas en familias (<em>joint sets</em>) que responden a un campo de esfuerzos regional o al doblamiento de capas.</p></li>
+<li><p><em>No sistemáticas</em>: Curvas, de geometría irregular y terminaciones ciegas contra fracturas preexistentes.</p></li>
 </ul>
 </li>
-<li><p><strong>Metodología de censo en campo</strong>: Se analizan mediante líneas de muestreo lineales (<em>scanlines</em>) o censos por área representativa, evaluando orientación (azimut/buzamiento), espaciado, persistencia y densidad de fractura[cite: 2].</p></li>
+<li><p><strong>Metodología de censo en campo</strong>: Se analizan mediante líneas de muestreo lineales (<em>scanlines</em>) o censos por área representativa, evaluando orientación (azimut/buzamiento), espaciado, persistencia y densidad de fractura.</p></li>
 </ul>
 </section>
 </section>
 <hr class="docutils" />
 <section id="fallas-y-sistemas-de-fallas">
 <h2>2. Fallas y Sistemas de Fallas<a class="headerlink" href="#fallas-y-sistemas-de-fallas" title="Permalink to this heading">#</a></h2>
-<p>Una falla es una superficie de discontinuidad tabular a lo largo de la cual se evidencia un desplazamiento relativo apreciable de los bloques contiguos[cite: 12, 14].</p>
+<p>Una falla es una superficie de discontinuidad tabular a lo largo de la cual se evidencia un desplazamiento relativo apreciable de los bloques contiguos.</p>
 <section id="anatomia-y-arquitectura-interna-de-una-zona-de-falla">
 <h3>2.1. Anatomía y Arquitectura Interna de una Zona de Falla<a class="headerlink" href="#anatomia-y-arquitectura-interna-de-una-zona-de-falla" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>Geometría básica</strong>: Bloque techo (<em>hanging wall</em>), bloque piso (<em>footwall</em>), rumbo (<em>strike</em>), buzamiento (<em>dip</em>) y cabeceo/ángulo de inclinación de estrías (<em>rake/pitch</em>)[cite: 15].</p></li>
+<li><p><strong>Geometría básica</strong>: Bloque techo (<em>hanging wall</em>), bloque piso (<em>footwall</em>), rumbo (<em>strike</em>), buzamiento (<em>dip</em>) y cabeceo/ángulo de inclinación de estrías (<em>rake/pitch</em>).</p></li>
 <li><p><strong>Arquitectura interna</strong>:</p>
 <ul>
 <li><p><strong>Núcleo de falla (<em>Fault Core</em>)</strong>: Zona estrecha donde se concentra la mayor parte del desplazamiento. Contiene rocas ultracataclásticas, arcillas y harinas de falla (<em>fault gouge</em>), actuando frecuentemente como barrera impermeable al flujo perpendicular de fluidos.</p></li>
@@ -528,7 +529,7 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 <hr class="docutils" />
 <section id="clasificacion-dinamica-de-anderson-1905">
 <h3>2.2. Clasificación Dinámica de Anderson (1905)<a class="headerlink" href="#clasificacion-dinamica-de-anderson-1905" title="Permalink to this heading">#</a></h3>
-<p>Basada en el postulado de que <strong>la superficie terrestre es una interfase libre sin esfuerzos de corte</strong>, lo que obliga a que uno de los tres esfuerzos principales sea obligatoriamente vertical (<span class="math notranslate nohighlight">\(\sigma_v \approx \rho g z\)</span>) y los otros dos horizontales (<span class="math notranslate nohighlight">\(\sigma_H, \sigma_h\)</span>)[cite: 11, 26, 32]:</p>
+<p>Basada en el postulado de que <strong>la superficie terrestre es una interfase libre sin esfuerzos de corte</strong>, lo que obliga a que uno de los tres esfuerzos principales sea obligatoriamente vertical (<span class="math notranslate nohighlight">\(\sigma_v \approx \rho g z\)</span>) y los otros dos horizontales (<span class="math notranslate nohighlight">\(\sigma_H, \sigma_h\)</span>):</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Tipo de Falla</p></th>
@@ -539,25 +540,25 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p><strong>Normal</strong></p></td>
-<td class="text-left"><p>Extensional (<span class="math notranslate nohighlight">\(\Delta L &gt; 0\)</span>)[cite: 11]</p></td>
+<td class="text-left"><p>Extensional (<span class="math notranslate nohighlight">\(\Delta L &gt; 0\)</span>)</p></td>
 <td class="text-left"><p><strong><span class="math notranslate nohighlight">\(\sigma_1\)</span> Vertical</strong>, <span class="math notranslate nohighlight">\(\sigma_2\)</span> y <span class="math notranslate nohighlight">\(\sigma_3\)</span> Horizontales</p></td>
-<td class="text-left"><p>Alto ángulo (<span class="math notranslate nohighlight">\(\sim 60^\circ\)</span>)[cite: 5]</p></td>
+<td class="text-left"><p>Alto ángulo (<span class="math notranslate nohighlight">\(\sim 60^\circ\)</span>)</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><strong>Inversa / Cabalgamiento</strong></p></td>
-<td class="text-left"><p>Compresivo (<span class="math notranslate nohighlight">\(\Delta L &lt; 0\)</span>)[cite: 11, 26]</p></td>
-<td class="text-left"><p><strong><span class="math notranslate nohighlight">\(\sigma_3\)</span> Vertical</strong>, <span class="math notranslate nohighlight">\(\sigma_1\)</span> y <span class="math notranslate nohighlight">\(\sigma_2\)</span> Horizontales[cite: 26]</p></td>
+<td class="text-left"><p>Compresivo (<span class="math notranslate nohighlight">\(\Delta L &lt; 0\)</span>)</p></td>
+<td class="text-left"><p><strong><span class="math notranslate nohighlight">\(\sigma_3\)</span> Vertical</strong>, <span class="math notranslate nohighlight">\(\sigma_1\)</span> y <span class="math notranslate nohighlight">\(\sigma_2\)</span> Horizontales</p></td>
 <td class="text-left"><p>Bajo ángulo (<span class="math notranslate nohighlight">\(\sim 30^\circ\)</span>)</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><strong>Transcurrente / Desgarre</strong></p></td>
-<td class="text-left"><p>De rumbo (<em>Strike-slip</em>)[cite: 11]</p></td>
-<td class="text-left"><p><strong><span class="math notranslate nohighlight">\(\sigma_2\)</span> Vertical</strong>, <span class="math notranslate nohighlight">\(\sigma_1\)</span> y <span class="math notranslate nohighlight">\(\sigma_3\)</span> Horizontales[cite: 6]</p></td>
-<td class="text-left"><p>Subvertical (<span class="math notranslate nohighlight">\(\sim 90^\circ\)</span>)[cite: 16]</p></td>
+<td class="text-left"><p>De rumbo (<em>Strike-slip</em>)</p></td>
+<td class="text-left"><p><strong><span class="math notranslate nohighlight">\(\sigma_2\)</span> Vertical</strong>, <span class="math notranslate nohighlight">\(\sigma_1\)</span> y <span class="math notranslate nohighlight">\(\sigma_3\)</span> Horizontales</p></td>
+<td class="text-left"><p>Subvertical (<span class="math notranslate nohighlight">\(\sim 90^\circ\)</span>)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <ul class="simple">
-<li><p>En fallas de cizalla conjugadas, el ángulo agudo bisecta la dirección del esfuerzo máximo <span class="math notranslate nohighlight">\(\sigma_1\)</span>, el ángulo obtuso contiene a <span class="math notranslate nohighlight">\(\sigma_3\)</span>, y el eje de intersección entre ambos planos coincide con <span class="math notranslate nohighlight">\(\sigma_2\)</span>[cite: 2, 6].</p></li>
+<li><p>En fallas de cizalla conjugadas, el ángulo agudo bisecta la dirección del esfuerzo máximo <span class="math notranslate nohighlight">\(\sigma_1\)</span>, el ángulo obtuso contiene a <span class="math notranslate nohighlight">\(\sigma_3\)</span>, y el eje de intersección entre ambos planos coincide con <span class="math notranslate nohighlight">\(\sigma_2\)</span>.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -566,28 +567,28 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 <ul class="simple">
 <li><p><strong>Fallas Lístricas y Rifting</strong>:</p>
 <ul>
-<li><p>Fallas normales cuyo buzamiento disminuye progresivamente en profundidad hasta asintotizarse en una superficie de despegue basal (<em>detachment</em>) subhorizontal[cite: 5, 13, 20].</p></li>
-<li><p>La rotación del bloque colgante sobre la concavidad genera un <strong>anticlinal de compensación (<em>rollover anticline</em>)</strong> y sistemas de fallas subsidiarias sintéticas y antitéticas[cite: 5, 8, 44].</p></li>
-<li><p><strong>Estratos de crecimiento (<em>syn-rift</em>)</strong>: Rellenan progresivamente la cubeta del semi-graben, mostrando cuñas de engrosamiento hacia el plano de la falla con geometrías de traslape (<em>onlap</em>, <em>overlap</em> y <em>offlap</em>) según la relación entre la tasa de sedimentación (<span class="math notranslate nohighlight">\(R_s\)</span>) y la tasa de subsidencia/levantamiento (<span class="math notranslate nohighlight">\(R_u\)</span>)[cite: 20, 44].</p></li>
+<li><p>Fallas normales cuyo buzamiento disminuye progresivamente en profundidad hasta asintotizarse en una superficie de despegue basal (<em>detachment</em>) subhorizontal.</p></li>
+<li><p>La rotación del bloque colgante sobre la concavidad genera un <strong>anticlinal de compensación (<em>rollover anticline</em>)</strong> y sistemas de fallas subsidiarias sintéticas y antitéticas.</p></li>
+<li><p><strong>Estratos de crecimiento (<em>syn-rift</em>)</strong>: Rellenan progresivamente la cubeta del semi-graben, mostrando cuñas de engrosamiento hacia el plano de la falla con geometrías de traslape (<em>onlap</em>, <em>overlap</em> y <em>offlap</em>) según la relación entre la tasa de sedimentación (<span class="math notranslate nohighlight">\(R_s\)</span>) y la tasa de subsidencia/levantamiento (<span class="math notranslate nohighlight">\(R_u\)</span>).</p></li>
 </ul>
 </li>
 <li><p><strong>Pliegues Asociados a Fallas Compresivas</strong>:</p>
 <ul>
-<li><p><em>Pliegues por flexión de falla (Fault-bend folds)</em>: La falla consta de geometría plano-rampa-plano; las capas del bloque techo se acomodan por deslizamiento flexural al superar los cambios de pendiente[cite: 4].</p></li>
-<li><p><em>Pliegues por propagación de falla (Fault-propagation folds)</em>: El pliegue asimétrico se desarrolla por delante y en la punta ciega (<em>tip line</em>) de una falla inversa que avanza hacia la superficie[cite: 4, 11, 20].</p></li>
-<li><p><em>Pliegues por despegue (Detachment folds)</em>: El acortamiento se acomoda sobre un nivel dúctil o evaporítico sin propagación de rampas hacia la cobertera[cite: 4, 37].</p></li>
+<li><p><em>Pliegues por flexión de falla (Fault-bend folds)</em>: La falla consta de geometría plano-rampa-plano; las capas del bloque techo se acomodan por deslizamiento flexural al superar los cambios de pendiente.</p></li>
+<li><p><em>Pliegues por propagación de falla (Fault-propagation folds)</em>: El pliegue asimétrico se desarrolla por delante y en la punta ciega (<em>tip line</em>) de una falla inversa que avanza hacia la superficie.</p></li>
+<li><p><em>Pliegues por despegue (Detachment folds)</em>: El acortamiento se acomoda sobre un nivel dúctil o evaporítico sin propagación de rampas hacia la cobertera.</p></li>
 </ul>
 </li>
 <li><p><strong>Inversión Tectónica Frágil</strong>:</p>
 <ul>
-<li><p>Reactivación compresiva de antiguas cuencas extensionales[cite: 42]. Las fallas normales previas rejuegan en sentido inverso cuando se supera la envolvente de reactivación friccional[cite: 42].</p></li>
-<li><p>Provoca la expulsión de secuencias <em>syn-rift</em>, la inversión de depocentros y la formación de estructuras de tipo <em>buttressing</em> (plegamiento y acumulación por colisión contra el plano de falla rígido)[cite: 42].</p></li>
+<li><p>Reactivación compresiva de antiguas cuencas extensionales. Las fallas normales previas rejuegan en sentido inverso cuando se supera la envolvente de reactivación friccional.</p></li>
+<li><p>Provoca la expulsión de secuencias <em>syn-rift</em>, la inversión de depocentros y la formación de estructuras de tipo <em>buttressing</em> (plegamiento y acumulación por colisión contra el plano de falla rígido).</p></li>
 </ul>
 </li>
 <li><p><strong>Validación mediante Secciones Balanceadas</strong>:</p>
 <ul>
-<li><p>Herramienta fundamental para verificar la admisibilidad y viabilidad geométrica de los cortes geológicos estructurales frágiles[cite: 5, 41].</p></li>
-<li><p>Se basan en la conservación de volumen en 3D o de área en deformación plana 2D (método de balance de longitud de capa / <em>bed-length</em> y balance de áreas / <em>area balancing</em>), permitiendo inferir con rigor la profundidad del despegue basal[cite: 5, 21, 41, 43, 45].</p></li>
+<li><p>Herramienta fundamental para verificar la admisibilidad y viabilidad geométrica de los cortes geológicos estructurales frágiles.</p></li>
+<li><p>Se basan en la conservación de volumen en 3D o de área en deformación plana 2D (método de balance de longitud de capa / <em>bed-length</em> y balance de áreas / <em>area balancing</em>), permitiendo inferir con rigor la profundidad del despegue basal.</p></li>
 </ul>
 </li>
 </ul>
@@ -598,7 +599,7 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 <h2>3. Rocas de Falla y Criterios Cinemáticos Frágiles<a class="headerlink" href="#rocas-de-falla-y-criterios-cinematicos-fragiles" title="Permalink to this heading">#</a></h2>
 <section id="clasificacion-de-rocas-de-falla-sibson-1977-wise-et-al-1984">
 <h3>3.1. Clasificación de Rocas de Falla (Sibson, 1977; Wise et al., 1984)<a class="headerlink" href="#clasificacion-de-rocas-de-falla-sibson-1977-wise-et-al-1984" title="Permalink to this heading">#</a></h3>
-<p>La trituración mecánica pura (cataclasis) predomina en el régimen frágil superficial, diferenciándose por su grado de cohesión y presencia de matriz[cite: 2]:</p>
+<p>La trituración mecánica pura (cataclasis) predomina en el régimen frágil superficial, diferenciándose por su grado de cohesión y presencia de matriz:</p>
 <ul class="simple">
 <li><p><strong>Incohesivas (Sin soldar mecánicamente)</strong>:</p>
 <ul>
@@ -613,7 +614,7 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 <li><p><strong>Ultracataclasita</strong>: &gt;90% de matriz vítrea o afilada sin foliación interna por flujo plástico.</p></li>
 </ul>
 </li>
-<li><p><strong>Pseudotaquilitas</strong>: Fusión friccional sísmica instantánea de las paredes de la falla durante terremotos de gran energía, consolidada como un vidrio oscuro o material criptocristalino en venas inyectadas[cite: 2].</p></li>
+<li><p><strong>Pseudotaquilitas</strong>: Fusión friccional sísmica instantánea de las paredes de la falla durante terremotos de gran energía, consolidada como un vidrio oscuro o material criptocristalino en venas inyectadas.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -623,18 +624,18 @@ $<span class="math notranslate nohighlight">\(\sigma_n^* = \sigma_n - P_f\)</spa
 <ol class="arabic simple">
 <li><p><strong>Estrías mecánicas (<em>slickenlines</em>) y Fibras minerales de crecimiento (<em>slickenfibers</em>)</strong>:</p>
 <ul class="simple">
-<li><p>Las estrías indican la línea de deslizamiento (<em>rake</em>)[cite: 15, 22].</p></li>
+<li><p>Las estrías indican la línea de deslizamiento (<em>rake</em>).</p></li>
 <li><p>Los escalones de calcita o cuarzo crecen asimétricamente a espaldas del resalte mecánico en sombras de presión (<em>crack-seal</em>); la cara vertical de los escalones apunta en el sentido de movimiento del bloque ausente/opuesto.</p></li>
 </ul>
 </li>
-<li><p><strong>Fracturas Subsidiarias y Modelos de Riedel (Experimentos de Arcilla)</strong>[cite: 22]:</p>
+<li><p><strong>Fracturas Subsidiarias y Modelos de Riedel (Experimentos de Arcilla)</strong>:</p>
 <ul class="simple">
-<li><p>Sobre el plano principal de cizalla (<span class="math notranslate nohighlight">\(M\)</span> o plano de falla) se desarrollan fracturas secundarias diagnósticas[cite: 22]:</p></li>
-<li><p><strong>Criterios R (Cizallas sintéticas de Riedel)</strong>: Se disponen a un ángulo bajo (<span class="math notranslate nohighlight">\(\sim 10^\circ\text{–}15^\circ\)</span>) respecto a la falla principal, sintéticas con el movimiento general[cite: 22].</p></li>
-<li><p><strong>Criterios R’ (Cizallas antitéticas de Riedel)</strong>: Se orientan a alto ángulo (<span class="math notranslate nohighlight">\(\sim 70^\circ\text{–}80^\circ\)</span>) respecto a la falla principal, con movimiento opuesto (antitético)[cite: 22].</p></li>
-<li><p><strong>Criterios P</strong>: Fracturas de cizalla sintéticas simétricas a <span class="math notranslate nohighlight">\(R\)</span>, que buzan en sentido contrario formando escalones resistentes cuya cara abrupta mira contra el sentido del bloque suprayacente[cite: 22].</p></li>
-<li><p><strong>Criterios T (Fracturas de Tensión / Grietas en <em>échelon</em>)</strong>: Se originan a <span class="math notranslate nohighlight">\(\sim 45^\circ\)</span> del plano de cizalla, perpendiculares a <span class="math notranslate nohighlight">\(\sigma_3\)</span> infinitesimal local, con morfología sigmoidal si sufren deformación progresiva frágil-dúctil[cite: 6, 20, 22].</p></li>
-<li><p><strong>Criterios de Petit (1987)</strong>: Clasificación de escalones y micro-lúnulas en el plano pulido de falla (<em>criterios T, R, RM, P, PT, PO</em>) que sustituyen definitivamente el viejo criterio subjetivo de “suavidad al tacto” por un riguroso análisis morfológico-mecánico[cite: 22].</p></li>
+<li><p>Sobre el plano principal de cizalla (<span class="math notranslate nohighlight">\(M\)</span> o plano de falla) se desarrollan fracturas secundarias diagnósticas:</p></li>
+<li><p><strong>Criterios R (Cizallas sintéticas de Riedel)</strong>: Se disponen a un ángulo bajo (<span class="math notranslate nohighlight">\(\sim 10^\circ\text{–}15^\circ\)</span>) respecto a la falla principal, sintéticas con el movimiento general.</p></li>
+<li><p><strong>Criterios R’ (Cizallas antitéticas de Riedel)</strong>: Se orientan a alto ángulo (<span class="math notranslate nohighlight">\(\sim 70^\circ\text{–}80^\circ\)</span>) respecto a la falla principal, con movimiento opuesto (antitético).</p></li>
+<li><p><strong>Criterios P</strong>: Fracturas de cizalla sintéticas simétricas a <span class="math notranslate nohighlight">\(R\)</span>, que buzan en sentido contrario formando escalones resistentes cuya cara abrupta mira contra el sentido del bloque suprayacente.</p></li>
+<li><p><strong>Criterios T (Fracturas de Tensión / Grietas en <em>échelon</em>)</strong>: Se originan a <span class="math notranslate nohighlight">\(\sim 45^\circ\)</span> del plano de cizalla, perpendiculares a <span class="math notranslate nohighlight">\(\sigma_3\)</span> infinitesimal local, con morfología sigmoidal si sufren deformación progresiva frágil-dúctil.</p></li>
+<li><p><strong>Criterios de Petit (1987)</strong>: Clasificación de escalones y micro-lúnulas en el plano pulido de falla (<em>criterios T, R, RM, P, PT, PO</em>) que sustituyen definitivamente el viejo criterio subjetivo de “suavidad al tacto” por un riguroso análisis morfológico-mecánico.</p></li>
 </ul>
 </li>
 </ol>

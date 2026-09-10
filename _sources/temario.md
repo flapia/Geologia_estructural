@@ -85,10 +85,8 @@
    - Balanceo por longitud de capa (*line-length*)
    - Balanceo por área (*area balance*) y cálculo de profundidad de despegue (*depth to detachment*)
 
-
 ##  Módulo V: Sistemas estructurales
 
 1. **Sistemas extensionales**
-
 2. **Sistemas transcurrentes y desgarres**
 3. **Sistemas compresionales**
