@@ -85,7 +85,10 @@
    - Balanceo por longitud de capa (*line-length*)
    - Balanceo por área (*area balance*) y cálculo de profundidad de despegue (*depth to detachment*)
 
-3. **Síntesis Tectónica**
-   - Sistemas compresionales: fajas plegadas y corridas
-   - Sistemas extensionales: cuencas de rift y márgenes pasivos
-   - Sistemas transcurrentes y desgarres
+
+##  Módulo V: Sistemas estructurales
+
+1. **Sistemas extensionales**
+
+2. **Sistemas transcurrentes y desgarres**
+3. **Sistemas compresionales**
