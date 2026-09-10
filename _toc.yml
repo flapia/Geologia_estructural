@@ -10,6 +10,7 @@ parts:
       - file: modulos/02_regimen_fragil
       - file: modulos/03_regimen_ductil
       - file: modulos/04_reconstruccion_tectonica
+      - file: modulos/05_sistem_structural
   - caption: Glosario
     chapters:
       - file: glosario
