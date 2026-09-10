@@ -2,32 +2,23 @@
 
 ---
 
-### C
-
-* <a id="def-cizalla-pura"></a>**Cizalla pura (Pure shear)**  
-  Deformación coaxial homogénea donde los ejes principales de deformación no rotan respecto a los ejes de esfuerzo.  
-  ↳ [Volver a Fundamentos de Deformación](modulos/01_fundamentos_deformacion.md#ref-cizalla-pura)
-
-* <a id="def-cizalla-simple"></a>**Cizalla simple (Simple shear)**  
-  Deformación no coaxial con rotación interna de los ejes principales de deformación durante el cizallamiento.  
-  ↳ [Volver a Fundamentos de Deformación](modulos/01_fundamentos_deformacion.md#ref-cizalla-simple)
-
----
-
 ### D
 
-* <a id="def-deformacion-ductil"></a>**Deformación dúctil**  
+(def-deformacion-ductil)=
+* **Deformación dúctil**  
   Mecanismo mediante el cual un cuerpo rocoso cambia de forma continuamente sin pérdida microscópica visible de cohesión continua.  
-  ↳ [Volver a Fundamentos de Deformación](modulos/01_fundamentos_deformacion.md#ref-deformacion-ductil)
+  ↳ {ref}`Volver al texto <ref-deformacion-ductil>`
 
-* <a id="def-deformacion-fragil"></a>**Deformación frágil**  
+(def-deformacion-fragil)=
+* **Deformación frágil**  
   Pérdida súbita de cohesión a lo largo de superficies discretas al superarse el límite de resistencia elasto-plástica del material.  
-  ↳ [Volver a Fundamentos de Deformación](modulos/01_fundamentos_deformacion.md#ref-deformacion-fragil)
+  ↳ {ref}`Volver al texto <ref-deformacion-fragil>`
 
 ---
 
 ### E
 
-* <a id="def-esfuerzo"></a>**Esfuerzo ($\sigma$)**  
+(def-esfuerzo)=
+* **Esfuerzo ($\sigma$)**  
   Fuerza aplicada sobre un plano por unidad de área ($F/A$).  
-  ↳ [Volver a Fundamentos de Deformación](modulos/01_fundamentos_deformacion.md#ref-esfuerzo)
+  ↳ {ref}`Volver al texto <ref-esfuerzo>`
