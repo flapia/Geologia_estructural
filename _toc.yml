@@ -7,3 +7,9 @@ parts:
   - caption: Módulos del Curso
     chapters:
       - file: modulos/01_fundamentos_deformacion
+      - file: modulos/02_regimen_fragil
+      - file: modulos/03_regimen_ductil
+      - file: modulos/04_reconstruccion_tectonica
+  - caption: Glosario
+    chapters:
+      - file: glosario
