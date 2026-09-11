@@ -11,7 +11,7 @@
 
 (def-deformacion-fragil)=
 * **Deformación frágil**  
-  Pérdida súbita de cohesión a lo largo de superficies discretas al superarse el límite de resistencia elasto-plástica del material.  
+  Pérdida súbita de cohesión a lo largo de superficies discretas al superarse el límite de resistencia elasto-plástica del material.
   ↳ {ref}`Volver al texto <ref-deformacion-fragil>`
 
 ---
