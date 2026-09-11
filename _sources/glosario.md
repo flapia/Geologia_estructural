@@ -18,7 +18,6 @@
 
 ### E
 
-(def-esfuerzo)=
-* **Esfuerzo ($\sigma$)**  
+* <span id="concepto-esfuerzo"></span>**Esfuerzo ($\sigma$)**  
   Fuerza aplicada sobre un plano por unidad de área ($F/A$).  
-  ↳ {ref}`Volver al texto <ref-esfuerzo>`
+  ↳ [Volver al texto](modulos/01_fundamentos_deformacion.md#retorno-esfuerzo)
