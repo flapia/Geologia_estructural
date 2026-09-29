@@ -30,5 +30,6 @@ launch_buttons:
 
 sphinx:
   config:
+    html_static_path: ["_static"]
     html_js_files:
       - chat_widget.js
