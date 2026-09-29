@@ -27,3 +27,7 @@ repository:
 launch_buttons:
   notebook_interface: "jupyterlab"
   binderhub_url: "https://mybinder.org"
+
+sphinx:
+  config:
+    templates_path: ["_templates"]
