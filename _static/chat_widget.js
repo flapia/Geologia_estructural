@@ -63,7 +63,7 @@
     document.body.appendChild(div);
 
     // URL DEL BACKEND (REEMPLAZAR CON TU URL DE RENDER):
-    const API_URL = "https://bot-geologia-estructural.onrender.com";
+    const API_URL = "https://bot-geologia-estructural.onrender.com/api/chat";
 
     const input = document.getElementById("bot-input");
     const sendBtn = document.getElementById("bot-send");
