@@ -1,23 +1,23 @@
 (function () {
-  console.log("Iniciando widget de geología...");
-
-  // 1. Cargar dependencias (KaTeX y Marked)
+  // 1. Inyectar estilos de KaTeX
   const katexCss = document.createElement("link");
   katexCss.rel = "stylesheet";
   katexCss.href = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css";
   document.head.appendChild(katexCss);
 
-  function cargarScript(src) {
+  function cargarScript(src, callback) {
     const s = document.createElement("script");
     s.src = src;
     s.async = true;
+    s.onload = callback;
     document.head.appendChild(s);
   }
-  cargarScript("https://cdn.jsdelivr.net/npm/marked/marked.min.js");
-  cargarScript("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js");
-  cargarScript("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js");
 
-  // 2. Función para alternar visibilidad (definida en window para disponibilidad inmediata)
+  // Carga de versiones seguras para CSP
+  cargarScript("https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js");
+  cargarScript("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js");
+
+  // 2. Control de apertura/cierre
   window.alternarChatBot = function () {
     const win = document.getElementById("bot-window");
     if (!win) return;
@@ -30,7 +30,31 @@
     }
   };
 
-  // 3. Montar interfaz en el DOM
+  // 3. Parser matemático seguro (sin eval ni auto-render)
+  function renderMatematicaSegura(texto) {
+    if (!window.katex) return texto;
+
+    // Procesar ecuaciones en bloque: $$...$$
+    texto = texto.replace(/\$\$([\s\S]+?)\$\$/g, function (match, ecuacion) {
+      try {
+        return window.katex.renderToString(ecuacion.trim(), { displayMode: true, throwOnError: false });
+      } catch (e) {
+        return match;
+      }
+    });
+
+    // Procesar ecuaciones en línea: $...$
+    texto = texto.replace(/\$([^\$\n]+?)\$/g, function (match, ecuacion) {
+      try {
+        return window.katex.renderToString(ecuacion.trim(), { displayMode: false, throwOnError: false });
+      } catch (e) {
+        return match;
+      }
+    });
+
+    return texto;
+  }
+
   function montarUI() {
     if (document.getElementById("bot-widget")) return;
 
@@ -62,26 +86,11 @@
 
     document.body.appendChild(div);
 
-    // URL DEL BACKEND (REEMPLAZAR CON TU URL DE RENDER):
     const API_URL = "https://bot-geologia-estructural.onrender.com/api/chat";
 
     const input = document.getElementById("bot-input");
     const sendBtn = document.getElementById("bot-send");
     const messages = document.getElementById("bot-messages");
-
-    function renderMath(elem) {
-      if (window.renderMathInElement) {
-        window.renderMathInElement(elem, {
-          delimiters: [
-            { left: "$$", right: "$$", display: true },
-            { left: "$", right: "$", display: false },
-            { left: "\\[", right: "\\]", display: true },
-            { left: "\\(", right: "\\)", display: false }
-          ],
-          throwOnError: false
-        });
-      }
-    }
 
     async function enviar() {
       const txt = input.value.trim();
@@ -114,13 +123,18 @@
         const botMsg = document.createElement("div");
         botMsg.style.cssText = "align-self: flex-start; background: #f0f2f5; color: #24292f; padding: 10px 14px; border-radius: 8px; max-width: 90%; word-break: break-word;";
 
+        let respuestaProcesada = data.respuesta;
+
+        // Primero se renderizan las fórmulas matemáticas a cadenas HTML directas
+        respuestaProcesada = renderMatematicaSegura(respuestaProcesada);
+
+        // Luego se aplica Markdown sobre el contenido restante
         if (window.marked && typeof window.marked.parse === "function") {
-          botMsg.innerHTML = window.marked.parse(data.respuesta);
+          botMsg.innerHTML = window.marked.parse(respuestaProcesada);
         } else {
-          botMsg.innerText = data.respuesta;
+          botMsg.innerHTML = respuestaProcesada;
         }
 
-        renderMath(botMsg);
         messages.appendChild(botMsg);
       } catch (err) {
         document.getElementById(loadId)?.remove();
